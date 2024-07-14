@@ -5,17 +5,17 @@ class Ntap < Formula
   if OS.mac?
     if Hardware::CPU.arm?
       url "https://github.com/shellrow/ntap/releases/download/v0.4.0/ntap-aarch64-apple-darwin.tar.xz"
-      sha256 "a27312d69f58ed99ec1823339a1d416fa21229696b9c180034ec1c198940364e"
+      sha256 "f03f63fb450fa62c8e0eb7cc292c29cff17a822d4174a7d6f8106bca6d2512a4"
     end
     if Hardware::CPU.intel?
       url "https://github.com/shellrow/ntap/releases/download/v0.4.0/ntap-x86_64-apple-darwin.tar.xz"
-      sha256 "2cb2a279f1d86f427836a6a53110310dfe3dd8544ce0d6c44e184bb7427106e0"
+      sha256 "a962cd30bf204123a5a240d39fe987447d10fc0890c79e707fe5c35fcefe26fa"
     end
   end
   if OS.linux?
     if Hardware::CPU.intel?
       url "https://github.com/shellrow/ntap/releases/download/v0.4.0/ntap-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "d9e5225826b0337a641984756bab52fa956c7724aac89d526cdf56df793b79d3"
+      sha256 "d9e76b19a6487d44992b7a201e5296f453475fed1eb5ccfc7308a38fafb342e7"
     end
   end
   license "MIT"
