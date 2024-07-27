@@ -1,21 +1,21 @@
 class Ntap < Formula
-  desc "Real-time network utilization monitoring tool"
+  desc "Network traffic monitor/analyzer"
   homepage "https://github.com/shellrow/ntap"
-  version "0.4.0"
+  version "0.5.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/shellrow/ntap/releases/download/v0.4.0/ntap-aarch64-apple-darwin.tar.xz"
-      sha256 "f03f63fb450fa62c8e0eb7cc292c29cff17a822d4174a7d6f8106bca6d2512a4"
+      url "https://github.com/shellrow/ntap/releases/download/v0.5.0/ntap-aarch64-apple-darwin.tar.xz"
+      sha256 "5c38a02e1251e2b42d11afbf8645b197c5cbe390962cfeaf8787fee0605c50b6"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/shellrow/ntap/releases/download/v0.4.0/ntap-x86_64-apple-darwin.tar.xz"
-      sha256 "a962cd30bf204123a5a240d39fe987447d10fc0890c79e707fe5c35fcefe26fa"
+      url "https://github.com/shellrow/ntap/releases/download/v0.5.0/ntap-x86_64-apple-darwin.tar.xz"
+      sha256 "659b31d737e5812e5b9d7e629b446a4ddf7897949f5e40e5d28538b438d2944d"
     end
   end
   if OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/shellrow/ntap/releases/download/v0.4.0/ntap-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "d9e76b19a6487d44992b7a201e5296f453475fed1eb5ccfc7308a38fafb342e7"
+      url "https://github.com/shellrow/ntap/releases/download/v0.5.0/ntap-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "46be6eba03d7ecc8dc85643fb987fa2494435b782bcd7ba7068c5932b3c1c85f"
     end
   end
   license "MIT"
